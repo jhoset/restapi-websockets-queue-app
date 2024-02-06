@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Queue Program </title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body class="container">
+    <h1 class="mt-5" id="lbl-current-desk"> Desk </h1>
+    <hr>
+    <div class="row">
+        <div class="col-8">
+            <h4 id="title">
+                Available to take the following ticket...
+            </h4>
+
+
+            <button id="finish-current-ticket" class="btn btn-success mt-5">
+                FINISH CURRENT TICKET
+            </button>
+
+            <button id="take-next-ticket" class="btn btn-dark mt-5">
+                TAKE NEXT ITEM
+            </button>
+
+        </div>
+
+        <div class="col-4 text-center">
+            <h4>Queue:</h4>
+
+            <div id="empty-list" class="alert alert-info mt-2 d-none">
+                <span>No more tickets available</span>
+            </div>
+
+            <h1 id="lbl-pending">0</h1>
+            <ul id="task-list" class="list-group">
+            </ul>
+
+        </div>
+    </div>
+
+    <script src="./js/desk.js"></script>
+
+</body>
+
+</html>
